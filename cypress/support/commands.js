@@ -8,16 +8,16 @@
 // https://on.cypress.io/custom-commands
 // ***********************************************
 //
-Cypress.Commands.add('clickBtn', (btnNm) => {
-    cy.get(btnNm).click({force:true})
+Cypress.Commands.add('clickBtn', btnNm => {
+  cy.get(btnNm).click({ force: true })
 })
 
-Cypress.Commands.add('enterText', (eId,text) => {
-    cy.get(eId).type(text)
+Cypress.Commands.add('enterText', (eId, text) => {
+  cy.get(eId).type(text)
 })
 
-Cypress.Commands.add('selectBtn', (select,text) => {
-    cy.get(select).select(text)
+Cypress.Commands.add('selectBtn', (select, text) => {
+  cy.get(select).select(text)
 })
 
 //
